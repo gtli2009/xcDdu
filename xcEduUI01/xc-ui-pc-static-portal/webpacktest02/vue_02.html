@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<a v-bind:href="url"><span v-text="name"></span></a>
+    <input type="text" v-model="num1">+
+    <input type="text" v-model="num2">=
+    <!--<span v-text="Number.parseInt(num1)+ Number.parseInt(num2)"></span>-->
+    <span v-text="result"></span>
+    <!--{{Number.parseInt(num1)+ Number.parseInt(num2)}}-->
+    <button v-on:click="change">计算</button>
+
+</div>
+</body>
+    <script src="build.js"></script>
+<script>
+
+</script>
+
+
+</html>
