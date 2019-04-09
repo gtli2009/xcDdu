@@ -9,11 +9,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
 
-/**
- * @author Administrator
- * @version 1.0
- * @create 2018-06-12 18:40
- **/
 @RequestMapping("/freemarker")
 @RestController
 public class FreemarkerController {
@@ -41,7 +36,7 @@ public class FreemarkerController {
         stu2.setName("小红");
         stu2.setMondy(200.1f);
         stu2.setAge(19);
-//        stu2.setBirthday(new Date());
+        stu2.setBirthday(new Date());
         List<Student> friends = new ArrayList<>();
         friends.add(stu1);
         stu2.setFriends(friends);

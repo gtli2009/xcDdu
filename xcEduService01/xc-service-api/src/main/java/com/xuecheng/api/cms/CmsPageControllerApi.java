@@ -51,4 +51,12 @@ public interface CmsPageControllerApi {
     @ApiOperation("删除页面信息")
     ResponseResult delete(String id);
 
+    /**
+     * 添加页面信息
+     * @param pageId
+     * @return
+     */
+    @ApiOperation("添加页面信息")
+    ResponseResult post(String pageId);
+
 }

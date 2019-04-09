@@ -14,4 +14,11 @@ public class QueryResponseResult extends ResponseResult {
        this.queryResult = queryResult;
     }
 
+    public QueryResult getQueryResult() {
+        return queryResult;
+    }
+
+    public void setQueryResult(QueryResult queryResult) {
+        this.queryResult = queryResult;
+    }
 }

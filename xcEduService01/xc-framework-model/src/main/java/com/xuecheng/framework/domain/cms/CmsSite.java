@@ -31,6 +31,8 @@ public class CmsSite {
     private String siteWebPath;
     //创建时间
     private Date siteCreateTime;
+    //物理路径
+    private String  sitePhysicalPath;
 
     public String getSiteId() {
         return siteId;
@@ -78,5 +80,13 @@ public class CmsSite {
 
     public void setSiteCreateTime(Date siteCreateTime) {
         this.siteCreateTime = siteCreateTime;
+    }
+
+    public String getSitePhysicalPath() {
+        return sitePhysicalPath;
+    }
+
+    public void setSitePhysicalPath(String sitePhysicalPath) {
+        this.sitePhysicalPath = sitePhysicalPath;
     }
 }
