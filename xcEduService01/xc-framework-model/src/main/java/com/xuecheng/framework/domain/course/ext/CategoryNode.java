@@ -15,4 +15,11 @@ public class CategoryNode extends Category {
 
     List<CategoryNode> children;
 
+    public List<CategoryNode> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<CategoryNode> children) {
+        this.children = children;
+    }
 }

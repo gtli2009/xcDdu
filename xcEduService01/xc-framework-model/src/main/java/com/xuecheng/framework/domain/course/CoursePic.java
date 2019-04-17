@@ -2,7 +2,6 @@ package com.xuecheng.framework.domain.course;
 
 import lombok.Data;
 import lombok.ToString;
-import org.hibernate.annotations.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.GeneratedValue;
@@ -14,7 +13,7 @@ import java.io.Serializable;
  */
 @Data
 @ToString
-@Entity
+@javax.persistence.Entity
 //@Table(name="course_pic")
 @GenericGenerator(name = "jpa-assigned", strategy = "assigned")
 public class CoursePic implements Serializable {
@@ -25,4 +24,23 @@ public class CoursePic implements Serializable {
     private String courseid;
     private String pic;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getCourseid() {
+        return courseid;
+    }
+
+    public void setCourseid(String courseid) {
+        this.courseid = courseid;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
 }

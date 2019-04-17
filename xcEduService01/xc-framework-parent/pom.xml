@@ -9,6 +9,7 @@
         <module>../test-rabbitmq-consumer</module>
         <module>../test-rabbitmq-producer</module>
         <module>../xc-service-cms-client</module>
+        <module>../fastDfs-test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -75,12 +76,6 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-feign</artifactId>
-                <version>1.4.4RELEASE</version>
-            </dependency>
-
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>

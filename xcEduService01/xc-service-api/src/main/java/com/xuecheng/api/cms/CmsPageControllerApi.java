@@ -3,6 +3,7 @@ package com.xuecheng.api.cms;
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
+import com.xuecheng.framework.domain.cms.response.CmsPostPageResult;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import io.swagger.annotations.Api;
@@ -22,6 +23,7 @@ public interface CmsPageControllerApi {
 
     /**
      * 新增页面
+     *
      * @param cmsPage
      * @return
      */
@@ -30,6 +32,7 @@ public interface CmsPageControllerApi {
 
     /**
      * 查询页面信息
+     *
      * @param id
      * @return
      */
@@ -38,13 +41,15 @@ public interface CmsPageControllerApi {
 
     /**
      * 修改页面信息
+     *
      * @return
      */
     @ApiOperation("修改页面信息")
-    CmsPageResult edit(String id,CmsPage cmsPage);
+    CmsPageResult edit(String id, CmsPage cmsPage);
 
     /**
      * 删除页面信息
+     *
      * @param id
      * @return
      */
@@ -53,10 +58,27 @@ public interface CmsPageControllerApi {
 
     /**
      * 添加页面信息
+     *
      * @param pageId
      * @return
      */
     @ApiOperation("添加页面信息")
     ResponseResult post(String pageId);
+
+    /**
+     * 保存页面
+     * @param cmsPage
+     * @return
+     */
+    @ApiOperation("保存页面信息")
+    CmsPageResult save(CmsPage cmsPage);
+
+    /**
+     * 一键发布页面信息
+     * @param cmsPage
+     * @return
+     */
+    @ApiOperation("一键发布页面")
+    CmsPostPageResult postPageQuick(CmsPage cmsPage);
 
 }

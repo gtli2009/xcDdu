@@ -38,4 +38,91 @@ public class FileSystem {
     //文件元信息
     private Map metadata;
 
+    public String getFileId() {
+        return fileId;
+    }
+
+    public void setFileId(String fileId) {
+        this.fileId = fileId;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public long getFileSize() {
+        return fileSize;
+    }
+
+    public void setFileSize(long fileSize) {
+        this.fileSize = fileSize;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileType() {
+        return fileType;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public int getFileWidth() {
+        return fileWidth;
+    }
+
+    public void setFileWidth(int fileWidth) {
+        this.fileWidth = fileWidth;
+    }
+
+    public int getFileHeight() {
+        return fileHeight;
+    }
+
+    public void setFileHeight(int fileHeight) {
+        this.fileHeight = fileHeight;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getBusinesskey() {
+        return businesskey;
+    }
+
+    public void setBusinesskey(String businesskey) {
+        this.businesskey = businesskey;
+    }
+
+    public String getFiletag() {
+        return filetag;
+    }
+
+    public void setFiletag(String filetag) {
+        this.filetag = filetag;
+    }
+
+    public Map getMetadata() {
+        return metadata;
+    }
+
+    public void setMetadata(Map metadata) {
+        this.metadata = metadata;
+    }
 }
