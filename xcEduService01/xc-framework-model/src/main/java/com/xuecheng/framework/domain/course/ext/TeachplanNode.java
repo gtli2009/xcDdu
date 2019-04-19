@@ -14,5 +14,32 @@ import java.util.List;
 public class TeachplanNode extends Teachplan {
 
     List<TeachplanNode> children;
+    //媒资文件的id
+    String mediaId;
+    //媒资文件的原始名称
+    String mediaFileoriginalname;
 
+    public List<TeachplanNode> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<TeachplanNode> children) {
+        this.children = children;
+    }
+
+    public String getMediaId() {
+        return mediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        this.mediaId = mediaId;
+    }
+
+    public String getMediaFileoriginalname() {
+        return mediaFileoriginalname;
+    }
+
+    public void setMediaFileoriginalname(String mediaFileoriginalname) {
+        this.mediaFileoriginalname = mediaFileoriginalname;
+    }
 }

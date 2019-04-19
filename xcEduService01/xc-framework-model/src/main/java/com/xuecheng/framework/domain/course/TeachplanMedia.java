@@ -30,6 +30,50 @@ public class TeachplanMedia implements Serializable {
 
     @Column(name="media_url")
     private String mediaUrl;
+    @Column(name="courseid")
     private String courseId;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getTeachplanId() {
+        return teachplanId;
+    }
+
+    public void setTeachplanId(String teachplanId) {
+        this.teachplanId = teachplanId;
+    }
+
+    public String getMediaId() {
+        return mediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        this.mediaId = mediaId;
+    }
+
+    public String getMediaFileOriginalName() {
+        return mediaFileOriginalName;
+    }
+
+    public void setMediaFileOriginalName(String mediaFileOriginalName) {
+        this.mediaFileOriginalName = mediaFileOriginalName;
+    }
+
+    public String getMediaUrl() {
+        return mediaUrl;
+    }
+
+    public void setMediaUrl(String mediaUrl) {
+        this.mediaUrl = mediaUrl;
+    }
+
+    public String getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(String courseId) {
+        this.courseId = courseId;
+    }
 }

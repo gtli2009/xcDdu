@@ -18,4 +18,11 @@ public class MediaFileProcess_m3u8 extends MediaFileProcess {
     //ts列表
     private List<String> tslist;
 
+    public List<String> getTslist() {
+        return tslist;
+    }
+
+    public void setTslist(List<String> tslist) {
+        this.tslist = tslist;
+    }
 }
